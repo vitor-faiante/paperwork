@@ -73,4 +73,19 @@
 	</div>
 </div>
 
+@if($welcomeNoteSaved == 1)
+    [[ HTML::script('js/special_note.js') ]]
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            $("a#file_click_handler").click(function() {
+                $('.dropdown-toggle').first().dropdown('toggle');
+            });
+            $("a#search_handler").click(function() {
+                $('[ng-model="search"]').focus();
+            });
+        };
+    </script>
+@endif
+
 @stop
