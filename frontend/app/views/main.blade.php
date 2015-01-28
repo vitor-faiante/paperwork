@@ -67,24 +67,36 @@
 			</ul>
 		</div>
 
+@if($welcomeNoteSaved == 1)
+    [[ HTML::script('js/special_note.js') ]]
+@endif
 		<div id="paperworkViewParent" class="{{ isVisible() ? 'col-xs-12 col-sm-5 col-sm-offset-7 col-md-7 col-md-offset-5 main' : 'col-xs-12 col-sm-12 col-md-12 main' }}" ng-controller="paperworkViewController">
-			<div id="paperworkView" ng-view></div>
+			<div id="paperworkView" ng-view onload="window.specialNoteEventListener();"></div>
 		</div>
 	</div>
 </div>
 
-@if($welcomeNoteSaved == 1)
+@if($welcomeNoteSaved == 12)
     [[ HTML::script('js/special_note.js') ]]
     
     <script type="text/javascript">
-        window.onload = function() {
-            $("a#file_click_handler").click(function() {
+        //window.onload = function() {
+        /*function eventListeners() {
+        console.log(5);
+            $("a#file_click_handler").click(function(event) {
+                event.preventDefault();
                 $('.dropdown-toggle').first().dropdown('toggle');
+                return false;
             });
-            $("a#search_handler").click(function() {
+            $("a#search_handler").click(function(event) {
+                event.preventDefault();
                 $('[ng-model="search"]').focus();
+                return false;
             });
-        };
+        };*/
+        //$scope.$on('$viewContentLoaded', function() {
+        //    alert("Hello");
+        //});
     </script>
 @endif
 
