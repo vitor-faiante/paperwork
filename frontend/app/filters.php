@@ -29,11 +29,13 @@ App::before(function($request)
 		is_array($access[$zone]) &&
 		array_key_exists('dns', $access[$zone]) &&
 		$access[$zone]['dns'] == $requestServerName) {
+		    echo("hello")
 			if(array_key_exists('ports', $access[$zone]) &&
 			is_array($access[$zone]['ports']) &&
 			array_key_exists('forceHttps', $access[$zone]['ports'])) {
-
+                echo "world";
 				if($access[$zone]['ports']['forceHttps'] === true && !Request::secure()) {
+			        die("redirect");
 			        return Redirect::secure(Request::path());
 				}
 			}
@@ -41,7 +43,7 @@ App::before(function($request)
 			$paperworkSession->currentZone = $zone;
 		}
 	}
-
+    die("error");
 	View::share('paperworkSession', $paperworkSession);
 });
 
