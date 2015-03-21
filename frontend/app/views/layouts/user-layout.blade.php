@@ -3,16 +3,16 @@
   <head>
     @include('partials/header-sidewide-meta')
 
-	<!-- [[ HTML::style('css/bootstrap.min.css') ]] -->
-    <!-- [[ HTML::style('css/bootstrap-theme.min.css') ]] -->
+	<!-- [[ HTML::style('css/bootstrap.min.css', array(), Request::secure()) ]] -->
+    <!-- [[ HTML::style('css/bootstrap-theme.min.css', array(), Request::secure()) ]] -->
 
-    [[ HTML::style('css/themes/paperwork-v1.min.css') ]]
+    [[ HTML::style('css/themes/paperwork-v1.min.css', array(), Request::secure()) ]]
 
-    [[ HTML::style('css/freqselector.min.css') ]]
+    [[ HTML::style('css/freqselector.min.css', array(), Request::secure()) ]]
 
-    [[ HTML::style('css/typeahead.min.css') ]]
+    [[ HTML::style('css/typeahead.min.css', array(), Request::secure()) ]]
     
-    [[ HTML::style('css/mathquill.css')]]
+    [[ HTML::style('css/mathquill.css', array(), Request::secure())]]
 
     [[ HTML::style('//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css') ]]
 
@@ -69,26 +69,26 @@
       </div>
     </div>
 
-	[[ HTML::script('js/jquery.min.js') ]]
-	[[ HTML::script('js/libraries.min.js') ]]
-	[[ HTML::script('js/angular.min.js') ]]
+	[[ HTML::script('js/jquery.min.js', array(), Request::secure()) ]]
+	[[ HTML::script('js/libraries.min.js', array(), Request::secure()) ]]
+	[[ HTML::script('js/angular.min.js', array(), Request::secure()) ]]
 
-	[[ HTML::script('js/paperwork.min.js') ]]
-	[[ HTML::script('js/paperwork-native.min.js') ]]
+	[[ HTML::script('js/paperwork.min.js', array(), Request::secure()) ]]
+	[[ HTML::script('js/paperwork-native.min.js', array(), Request::secure()) ]]
 
-	[[ HTML::script('js/bootstrap.min.js') ]]
-	[[ HTML::script('js/tagsinput.min.js') ]]
+	[[ HTML::script('js/bootstrap.min.js', array(), Request::secure()) ]]
+	[[ HTML::script('js/tagsinput.min.js', array(), Request::secure()) ]]
 
-	[[ HTML::script('ckeditor/ckeditor.js') ]]
-	[[ HTML::script('ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js') ]]
+	[[ HTML::script('ckeditor/ckeditor.js', array(), Request::secure()) ]]
+	[[ HTML::script('ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js', array(), Request::secure()) ]]
 	[[ HTML::script('//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js') ]]
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-    [[ HTML::script('js/ltie9compat.min.js') ]]
+    [[ HTML::script('js/ltie9compat.min.js', array(), Request::secure()) ]]
   <![endif]-->
   <!--[if lt IE 11]>
-    [[ HTML::script('js/ltie11compat.js') ]]
+    [[ HTML::script('js/ltie11compat.js', array(), Request::secure()) ]]
   <![endif]-->
 
 </body>
