@@ -3,16 +3,16 @@
   <head>
     @include('partials/header-sidewide-meta')
 
-	<!-- [[ HTML::style('css/bootstrap.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]] -->
-    <!-- [[ HTML::style('css/bootstrap-theme.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]] -->
+	<!-- [[ HTML::style('css/bootstrap.min.css', array(), true) ]] -->
+    <!-- [[ HTML::style('css/bootstrap-theme.min.css', array(), true) ]] -->
 
-    [[ HTML::style('css/themes/paperwork-v1.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::style('css/themes/paperwork-v1.min.css', array(), true) ]]
 
-    [[ HTML::style('css/freqselector.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::style('css/freqselector.min.css', array(), true) ]]
 
-    [[ HTML::style('css/typeahead.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::style('css/typeahead.min.css', array(), true) ]]
     
-    [[ HTML::style('css/mathquill.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443))]]
+    [[ HTML::style('css/mathquill.css', array(), true)]]
 
     [[ HTML::style('//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css') ]]
 
@@ -69,26 +69,26 @@
       </div>
     </div>
 
-	[[ HTML::script('js/jquery.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
-	[[ HTML::script('js/libraries.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
-	[[ HTML::script('js/angular.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+	[[ HTML::script('js/jquery.min.js', array(), true) ]]
+	[[ HTML::script('js/libraries.min.js', array(), true) ]]
+	[[ HTML::script('js/angular.min.js', array(), true) ]]
 
-	[[ HTML::script('js/paperwork.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
-	[[ HTML::script('js/paperwork-native.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+	[[ HTML::script('js/paperwork.min.js', array(), true) ]]
+	[[ HTML::script('js/paperwork-native.min.js', array(), true) ]]
 
-	[[ HTML::script('js/bootstrap.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
-	[[ HTML::script('js/tagsinput.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+	[[ HTML::script('js/bootstrap.min.js', array(), true) ]]
+	[[ HTML::script('js/tagsinput.min.js', array(), true) ]]
 
-	[[ HTML::script('ckeditor/ckeditor.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
-	[[ HTML::script('ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+	[[ HTML::script('ckeditor/ckeditor.js', array(), true) ]]
+	[[ HTML::script('ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js', array(), true) ]]
 	[[ HTML::script('//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js') ]]
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-    [[ HTML::script('js/ltie9compat.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::script('js/ltie9compat.min.js', array(), true) ]]
   <![endif]-->
   <!--[if lt IE 11]>
-    [[ HTML::script('js/ltie11compat.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::script('js/ltie11compat.js', array(), true) ]]
   <![endif]-->
 
 </body>

@@ -3,10 +3,10 @@
   <head>
     @include('partials/header-sidewide-meta')
 
-    <!-- [[ HTML::style('css/bootstrap.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]] -->
-    <!-- [[ HTML::style('css/bootstrap-theme.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]] -->
+    <!-- [[ HTML::style('css/bootstrap.min.css', array(), true) ]] -->
+    <!-- [[ HTML::style('css/bootstrap-theme.min.css', array(), true) ]] -->
 
-    [[ HTML::style('css/themes/paperwork-v1.min.css', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::style('css/themes/paperwork-v1.min.css', array(), true) ]]
 
   </head>
   <body class="paperwork-error">
@@ -26,15 +26,15 @@
       </div>
     </div>
 
-  [[ HTML::script('js/jquery.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+  [[ HTML::script('js/jquery.min.js', array(), true) ]]
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-    [[ HTML::script('js/ltie9compat.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::script('js/ltie9compat.min.js', array(), true) ]]
   <![endif]-->
   <!--[if lt IE 11]>
-    [[ HTML::script('js/ltie11compat.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+    [[ HTML::script('js/ltie11compat.js', array(), true) ]]
   <![endif]-->
-  [[ HTML::script('js/libraries.min.js', array(), (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443)) ]]
+  [[ HTML::script('js/libraries.min.js', array(), true) ]]
   </body>
 </html>
